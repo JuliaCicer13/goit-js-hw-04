@@ -1,10 +1,15 @@
 
-"use strict"
 
-function isEnoughCapacity(products, containerSize) { 
+
+function isEnoughCapacity(products, containerSize, targetValue) { 
 let totalProducts = 0;
   for (let product in products) {
     totalProducts += products[product];
+
+    if (products[product] === targetValue) {
+
+      return true;
+    }
   }
   return totalProducts <= containerSize;
 }
