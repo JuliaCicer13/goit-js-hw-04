@@ -3,7 +3,7 @@
 
 function isEnoughCapacity(products, containerSize, targetValue) { 
 let totalProducts = 0;
-  for (let product in products) {
+  for (const product in products) {
     totalProducts += products[product];
 
     if (products[product] === targetValue) {
