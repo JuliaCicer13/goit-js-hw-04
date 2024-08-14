@@ -11,7 +11,7 @@ let totalProducts = 0;
       return true;
     }
   }
-  return totalProducts <= containerSize;
+ return totalProducts <= containerSize;
 }
 
 
